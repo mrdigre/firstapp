@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run db:start & next dev",
     "build": "next build",
     "start": "next start",
     "db:start": "json-server --watch db.local.json --port 8000"

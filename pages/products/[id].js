@@ -1,12 +1,12 @@
 import { useRouter } from "next/router";
-import { products } from "./index";
+import { products } from "./index"; // borrar
 import ProductPage from "../../components/ProductPage";
 
 const Post = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const productData = products.find((product) => product.id === Number(id));
+  const productData = products.find((product) => product.id === Number(id)); // borrar y traer el product que yo quiera con un fetch useEstate, useEffect.
 
   return (
     <div>

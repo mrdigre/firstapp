@@ -10,8 +10,6 @@ import Index from "./index";
 import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
 export default function Wrapper({ Component, pageProps }) {
-  console.log(pageProps);
-
   return (
     <>
       <ResponsiveAppBar />
