@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "db:start": "json-server --watch db.local.json --port 8000"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -14,5 +15,8 @@
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.3"
   }
 }
