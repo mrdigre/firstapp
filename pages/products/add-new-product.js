@@ -14,6 +14,7 @@ import { useFormik } from "formik";
 const validationSchema = yup.object({
   title: yup
     .string()
+
     .max(15, "Must be 15 characters or less")
     .required("Title is required"),
   img: yup.string().url("Enter valid URL").required("URL is required"),
